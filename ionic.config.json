@@ -1,7 +1,10 @@
 {
   "name": "agenda",
   "type": "ionic1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  },
   "watchPatterns": [
     "scss/**/*",
     "www/**/*",
