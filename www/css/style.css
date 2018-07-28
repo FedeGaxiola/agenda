@@ -63,3 +63,37 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+
+@media (max-width: 559px){
+    #txtcheck{
+        margin-left: 15%;
+        margin-top:-5px;
+        margin-bottom: 5px;
+    }
+    #datecheck{
+        margin-left:15%;
+        color:gray;
+    }
+}
+@media (min-width: 600px){
+    #txtcheck{
+        margin-left: 8%;
+        margin-top:-5px;
+        margin-bottom: 5px;
+    }
+    #datecheck{
+        margin-left:8%;
+        color:gray;
+    }
+@media (min-width: 1000px){
+    #txtcheck{
+        margin-left: 5%;
+        margin-top:-5px;
+        margin-bottom: 5px;
+    }
+    #datecheck{
+        margin-left:5%;
+        color:gray;
+    }
+}
