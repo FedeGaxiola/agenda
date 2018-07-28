@@ -1,9 +1,16 @@
-<ion-header-bar class="bar-dark">
-        <h1>Nota</h1>
-        <button class="button button-icon icon ion-android-close pull-right" ng-click="modalNota.hide()"></button>
+<ion-header-bar class="bar-light">
+        <button class="button button-icon icon ion-chevron-left" ng-click="modalNota.hide()" style="color: #3a89ff; opacity:0.9;"></button>
+        <div class="h1 title" style="text-align:center;">Nota</div>
+        <button class="button button-icon icon ion-archive" style="color: #3a89ff; opacity:0.9;"></button>
+       
     </ion-header-bar>
 <ion-content>
     <ion-pane>
-        hola
+        <div style="margin-top: 5%; margin-bottom: 5%; margin-left: 3%; color: gray;">
+            <label>28/07/2018 10:56 a.m.</label>
+        </div>
+        <center>
+        <textarea autofocus style="width:calc(95%); height: 85vh;"></textarea>
+    </center>
     </ion-pane>
 </ion-content>
