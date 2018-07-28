@@ -29,6 +29,7 @@
     border-radius: 50%;
 }
 
+
 /* When the checkbox is checked, add a blue background */
 .contCheck input:checked ~ .checkmark {
     background-color: #2196F3;
@@ -81,6 +82,8 @@
         margin-left:8%;
         color:gray;
     }
+}
+
 @media (min-width: 1000px){
     #txtcheck{
         margin-left: 5%;
