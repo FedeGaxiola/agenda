@@ -29,11 +29,6 @@
     border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
-.contCheck:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
 /* When the checkbox is checked, add a blue background */
 .contCheck input:checked ~ .checkmark {
     background-color: #2196F3;

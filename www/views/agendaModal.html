@@ -1,16 +1,17 @@
 <ion-header-bar class="bar-light">
         <button class="button button-icon icon ion-chevron-left" ng-click="modalNota.hide()" style="color: #3a89ff; opacity:0.9;"></button>
         <div class="h1 title" style="text-align:center;">Nota</div>
-        <button class="button button-icon icon ion-archive" style="color: #3a89ff; opacity:0.9;"></button>
-       
-    </ion-header-bar>
+        <button class="button button-icon icon ion-archive" style="color: #3a89ff; opacity:0.9;" ng-click="guardarNota()"></button>
+</ion-header-bar>
 <ion-content>
     <ion-pane>
         <div style="margin-top: 5%; margin-bottom: 5%; margin-left: 3%; color: gray;">
-            <label>28/07/2018 10:56 a.m.</label>
+            <label>{{notaActual.FechaCreacion}}</label>
         </div>
-        <center>
-        <textarea autofocus style="width:calc(95%); height: 85vh;"></textarea>
-    </center>
+        <div style="position:fixed; width:100%;">
+            <center>
+                <textarea autofocus style="width:calc(95%); height: 80vh;" ng-model="notaActual.Contenido"></textarea>
+            </center>
+        </div>
     </ion-pane>
 </ion-content>

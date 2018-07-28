@@ -1,27 +1,18 @@
 <ion-header-bar class="bar-dark">
-    <button class="button button-icon icon ion-compose pull-right" ng-click="modalNota.show()"></button>
+    <button class="button button-icon icon ion-compose pull-right" ng-click="abrirModal(null)"></button>
 </ion-header-bar>
 
-<ion-content>
+<ion-content ng-init="initNotas()">
 <!-- Inicio de la lista -->
     <div class="list">
         <!-- Elemento de la lista -->
-        <div class="item">
+        <div class="item" ng-repeat="nota in notasGuardadas">
             <label class="contCheck">
-            <input type="checkbox" checked="checked">
+            <input type="checkbox" ng-checked="nota.check">
             <span class="checkmark"></span>
             </label>
-            <h2 id="txtcheck">One</h2>
-            <h3 id="datecheck">23/05/2013</h3>
-        </div>
-        
-        <div class="item">
-            <label class="contCheck">
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-            </label>
-            <h2 id="txtcheck">One</h2>
-            <h3 id="datecheck">23/05/2013</h3>
+            <h2 id="txtcheck">{{nota.Contenido}}</h2>
+            <h3 id="datecheck">{{nota.FechaCreacion}}</h3>
         </div>
     </div> 
 </ion-content>
