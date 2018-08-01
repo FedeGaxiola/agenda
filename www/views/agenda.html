@@ -1,4 +1,5 @@
 <ion-header-bar class="bar-dark">
+    <button class="button button-icon icon ion-ios-trash" ng-click="eliminarNotas()" ng-show="btnEliminar"></button>
     <button class="button button-icon icon ion-compose pull-right" ng-click="abrirModal(null)"></button>
 </ion-header-bar>
 
@@ -8,11 +9,13 @@
         <!-- Elemento de la lista -->
         <div class="item" ng-repeat="nota in notasGuardadas">
             <label class="contCheck">
-            <input type="checkbox" ng-checked="nota.check">
-            <span class="checkmark"></span>
+                <input type="checkbox" ng-model="nota.check" ng-checked="nota.check" ng-change="validarSeleccion()">
+                <span class="checkmark"></span>
             </label>
-            <h2 id="txtcheck">{{nota.Contenido}}</h2>
-            <h3 id="datecheck">{{nota.FechaCreacion}}</h3>
+            <div ng-click="abrirModal(nota)">
+                <h2 id="txtcheck">{{nota.Contenido}}</h2>
+                <h3 id="datecheck">{{nota.FechaCreacion}}</h3>
+            </div>
         </div>
     </div> 
 </ion-content>

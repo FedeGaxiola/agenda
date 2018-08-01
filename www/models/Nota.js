@@ -24,15 +24,15 @@ app.factory('Nota', function($cordovaSQLite, DBA) {
     self.remove = function(member) {
       console.log("Eliminando de db");
       console.log(member);
-      var parameters = [member.idDetalle_Inventario];
+      var parameters = [member];
       return DBA.query("DELETE FROM notas WHERE idNota = (?)", parameters);
     }
 
     self.removeMany = function(lista) {
       console.log("Eliminando de db");
       
-     // var parameters = [lista];
-      var parameters = lista;
+      //var parameters = [lista];
+     var parameters = lista;
       console.log(parameters);
       return DBA.query("DELETE FROM notas WHERE idNota IN (?)", parameters);
     }
